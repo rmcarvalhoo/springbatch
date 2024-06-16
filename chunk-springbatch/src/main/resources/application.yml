@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: chunk-springbatch
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/springbach-helloword-db?allowPublicKeyRetrieval=true
+    username: sbhw_one
+    password: sbhw_pw
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+  batch:
+    jdbc:
+      initialize-schema: always
